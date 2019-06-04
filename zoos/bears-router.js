@@ -16,6 +16,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+
 router.get("/:id", async (req, res) => {
   try {
     const bears = await Bears.findById(req.params.id);
